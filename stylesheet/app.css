@@ -7,6 +7,11 @@
     box-sizing: border-box;
 }
 header{
+    padding: 0 15px;
+}
+header{
+    background-color: orangered;
+    z-index: 1;
     position: fixed;
     top: 0;
     width: 100%;
@@ -15,6 +20,16 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.h-flex .h-i{
+    display: flex;
+    align-items: center;
+}
+.h-flex .h-i img{
+    width: 150px;
+    margin-left: 15px;
+    height: 30px;
+    border: 1px solid;
 }
 .h-flex .h-i i,
 .h-flex .h-ii .fa-microphone,
@@ -35,4 +50,23 @@ header{
 .h-flex .h-iii{
     display: flex;
     align-items: center;
+}
+main{
+    margin-top: 70px;    
+}
+main .m-flex{
+    display: flex;
+}
+main .m-flex .nav{}
+main .m-cont{
+    position: relative;
+}
+main .m-cont .slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+main .m-cont .slider .slider-rel{
+    position: relative;
 }
