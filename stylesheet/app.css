@@ -10,7 +10,7 @@ body{
     overflow-x:hidden;
 }
 header{
-    padding: 0 15px;
+    padding: 5px 15px;
 }
 header{
     z-index: 1;
@@ -40,6 +40,9 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.h-flex .h-ii .fa-microphone{
+    margin-left: 5px;
 }
 .h-flex .h-ii label input,
 .h-flex .h-ii label button{
@@ -114,6 +117,24 @@ main .m-flex .nav .nav-i a i{
 }
 main .m-flex .nav .nav-ii{
     /* display:none; */
+    width: 250px;
+    height: 100vh;
+    overflow-y: scroll;
+}
+main .m-flex .nav .nav-ii a{
+    display: flex;
+    padding: 10px;
+    margin: 0px 15px;
+    border-radius: 10px;
+    margin-top: 5px;
+    color: #000;
+    text-decoration: none;
+}
+main .m-flex .nav .nav-ii a i{
+    margin-right: 20px;
+}
+main .m-flex .nav .nav-ii a:hover{
+    background-color: #f5f5f5
 }
 main .m-cont{
     position: relative;
