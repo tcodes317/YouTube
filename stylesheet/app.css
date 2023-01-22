@@ -234,29 +234,45 @@ main .m-cont .m-contt{
     z-index: -1;
     top: 50px;
     left: 300px;
-    border: 1px solid;
 }
 main .m-cont .m-contt .m-conttt-flex{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
 }
-main .m-cont .m-contt .m-conttt-flex .box{
+main .m-cont .m-contt .m-phase-i .box,
+main .m-cont .m-contt .m-phase-iii .box,
+main .m-cont .m-contt .m-phase-iv .box{
     margin-right: 30px;
 }
-main .m-cont .m-contt .box{
-    width: 360px;
+main .m-cont .m-contt .m-phase-i,
+main .m-cont .m-contt .m-phase-iii,
+main .m-cont .m-contt .m-phase-iv{
+    border-bottom: 5px solid;
+    padding-bottom: 30px;
 }
-main .m-cont .m-contt .box .img{
+main .m-cont .m-contt .m-phase-i .box,
+main .m-cont .m-contt .m-phase-iii .box,
+main .m-cont .m-contt .m-phase-iv .box{
+    width: 360px;
+    position: relative;
+    margin-top: 20px;
+}
+main .m-cont .m-contt .m-phase-i .box .img,
+main .m-cont .m-contt .m-phase-iii .box .img,
+main .m-cont .m-contt .m-phase-iv .box .img{
     position: relative;
 }
-main .m-cont .m-contt .box .img img{
+main .m-cont .m-contt .m-phase-i .box .img img,
+main .m-cont .m-contt .m-phase-iii .box .img img,
+main .m-cont .m-contt .m-phase-iv .box .img img{
     width: 100%;
-    height: 220px;
     border: 1px solid;
     border-radius: 20px;
 }
-main .m-cont .m-contt .box .img .time{
+main .m-cont .m-contt .m-phase-i .box .img .time,
+main .m-cont .m-contt .m-phase-iii .box .img .time,
+main .m-cont .m-contt .m-phase-iv .box .img .time{
     width: 60px;
     height: 20px;
     bottom: 10px;
@@ -265,27 +281,106 @@ main .m-cont .m-contt .box .img .time{
     position: absolute;
     background-color: #000;
 }
-main .m-cont .m-contt .box .m-contt-flex{
+main .m-cont .m-contt .m-phase-i .box .m-contt-flex,
+main .m-cont .m-contt .m-phase-iii .box .m-contt-flex,
+main .m-cont .m-contt .m-phase-iv .box .m-contt-flex{
     display: flex;
     margin-top: 5px;
 }
-main .m-cont .m-contt .box .m-contt-flex .i{
+main .m-cont .m-contt .m-phase-i .box .m-contt-flex .i,
+main .m-cont .m-contt .m-phase-iii .box .m-contt-flex .i,
+main .m-cont .m-contt .m-phase-iv .box .m-contt-flex .i{
     width: 40px;
     height: 40px;
     border: 1px solid;
     border-radius: 100px;
     margin-right: 10px;
 }
-main .m-cont .m-contt .box .m-contt-flex .i img{
+main .m-cont .m-contt .m-phase-i .box .m-contt-flex .i img,
+main .m-cont .m-contt .m-phase-iii .box .m-contt-flex .i img,
+main .m-cont .m-contt .m-phase-iv .box .m-contt-flex .i img{
     width: 100%;
     height: 40px;
 }
-main .m-cont .m-contt .box .m-contt-flex .ii p{
+main .m-cont .m-contt .m-phase-i .box .m-contt-flex .ii p,
+main .m-cont .m-contt .m-phase-iii .box .m-contt-flex .ii p{
     margin-bottom: 10px;
 }
-main .m-cont .m-contt .box .m-contt-flex .ii p:nth-of-type(3){
+main .m-cont .m-contt .m-phase-i .box .m-contt-flex .ii p:nth-of-type(3),
+main .m-cont .m-contt .m-phase-iii .box .m-contt-flex .ii p:nth-of-type(3){
     color: #727272;
 }
-main .m-cont .m-contt .box .m-contt-flex .ii p:nth-of-type(1){
+main .m-cont .m-contt .m-phase-i .box .m-contt-flex .ii p:nth-of-type(1),
+main .m-cont .m-contt .m-phase-iii .box .m-contt-flex .ii p:nth-of-type(1){
     font-weight: 900;
+}
+main .m-cont .m-contt .m-phase-ii,
+main .m-cont .m-contt .m-phase-iii{
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+main .m-cont .m-contt .m-phase-ii .img{
+    display: flex;
+    align-items: center;
+}
+main .m-cont .m-contt .m-phase-ii .img img{
+    width: 30px;
+    height: 30px;
+    border: 1px solid;
+    margin-right: 20px;
+}
+main .m-cont .m-contt .m-phase-ii .img p{
+    font-size: 20px;
+}
+main .m-cont .m-contt .m-phase-ii .img p::after{
+    content: "s";
+}
+main .m-cont .m-contt .m-phase-ii .box-cont{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap:nowrap;
+}
+main .m-cont .m-contt .m-phase-ii .box-cont .box{
+    margin-right: 20px;
+}
+main .m-cont .m-contt .m-phase-ii .box-cont .box .box-img{
+    width: 150px;
+    height: 300px;
+    border: 1px solid;
+    border-radius: 15px;
+}
+main .m-cont .m-contt .m-phase-i .box .img img,
+main .m-cont .m-contt .m-phase-ii .box-cont .box .box-img,
+main .m-cont .m-contt .m-phase-iii .box .img img{
+    height: 220px;
+}
+main .m-cont .m-contt .m-phase-ii .box-cont .box .box-dt p:first-child{
+    font-weight: 900;
+    font-size: 20px;
+}
+main .m-cont .m-contt .m-phase-ii .box-cont .box .box-dt p{
+    margin: 10px 0;
+}
+main .m-cont .m-contt .m-phase-ii .btn{
+    margin-top: 20px;
+}
+main .m-cont .m-contt .m-phase-ii .btn,
+main .m-cont .m-contt .m-phase-ii .btn button{
+    width: 100%;
+}
+main .m-cont .m-contt .m-phase-ii .btn button{
+    border:none;
+    padding: 15px;
+    background-color: transparent;
+    border-bottom: 5px solid;
+}
+main .m-cont .m-contt .m-phase-ii .btn button:hover{
+    background-color: #b1b1b1;
+    transition: background-color linear .3s;
+    cursor: pointer;
+}
+main .m-cont .m-contt .m-phase-ii .btn button i{
+    font-size: 20px;
 }
