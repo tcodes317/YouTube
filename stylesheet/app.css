@@ -164,6 +164,23 @@ main .m-flex .nav .nav-ii a{
     color: #000;
     text-decoration: none;
 }
+
+main .m-flex .nav .nav-ii a p{
+    margin-bottom: 10px;
+}
+main .m-flex .nav .nav-ii a button{
+    width: 95px;
+    border-radius: 100px;
+    padding: 10px 8px;
+    margin-top: 10px;
+    border:none;
+    box-shadow: 0px 0px 2px 0px #000;
+}
+main .m-flex .nav .nav-ii a button:hover{
+    background-color: aqua;
+    cursor: pointer;
+    transition: background-color linear .3s;
+}
 main .m-flex .nav .nav-ii a i{
     margin-right: 20px;
 }
@@ -303,15 +320,18 @@ main .m-cont .m-contt .m-phase-iv .box .m-contt-flex .i img{
     height: 40px;
 }
 main .m-cont .m-contt .m-phase-i .box .m-contt-flex .ii p,
-main .m-cont .m-contt .m-phase-iii .box .m-contt-flex .ii p{
+main .m-cont .m-contt .m-phase-iii .box .m-contt-flex .ii p,
+main .m-cont .m-contt .m-phase-iv .box .m-contt-flex .ii p{
     margin-bottom: 10px;
 }
 main .m-cont .m-contt .m-phase-i .box .m-contt-flex .ii p:nth-of-type(3),
-main .m-cont .m-contt .m-phase-iii .box .m-contt-flex .ii p:nth-of-type(3){
+main .m-cont .m-contt .m-phase-iii .box .m-contt-flex .ii p:nth-of-type(3),
+main .m-cont .m-contt .m-phase-iv .box .m-contt-flex .ii p:nth-of-type(3){
     color: #727272;
 }
 main .m-cont .m-contt .m-phase-i .box .m-contt-flex .ii p:nth-of-type(1),
-main .m-cont .m-contt .m-phase-iii .box .m-contt-flex .ii p:nth-of-type(1){
+main .m-cont .m-contt .m-phase-iii .box .m-contt-flex .ii p:nth-of-type(1),
+main .m-cont .m-contt .m-phase-iv .box .m-contt-flex .ii p:nth-of-type(1){
     font-weight: 900;
 }
 main .m-cont .m-contt .m-phase-ii,
@@ -321,7 +341,8 @@ main .m-cont .m-contt .m-phase-iii{
     padding-top: 20px;
     padding-bottom: 20px;
 }
-main .m-cont .m-contt .m-phase-ii .img{
+main .m-cont .m-contt .m-phase-ii .img,
+main .m-cont .m-contt .m-phase-iv .img{
     display: flex;
     align-items: center;
 }
@@ -353,7 +374,8 @@ main .m-cont .m-contt .m-phase-ii .box-cont .box .box-img{
 }
 main .m-cont .m-contt .m-phase-i .box .img img,
 main .m-cont .m-contt .m-phase-ii .box-cont .box .box-img,
-main .m-cont .m-contt .m-phase-iii .box .img img{
+main .m-cont .m-contt .m-phase-iii .box .img img,
+main .m-cont .m-contt .m-phase-iv .box .img img{
     height: 220px;
 }
 main .m-cont .m-contt .m-phase-ii .box-cont .box .box-dt p:first-child{
@@ -383,4 +405,30 @@ main .m-cont .m-contt .m-phase-ii .btn button:hover{
 }
 main .m-cont .m-contt .m-phase-ii .btn button i{
     font-size: 20px;
+}
+main .m-cont .m-contt .loading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+main .m-cont .m-contt .loading div{
+    border-top: 5px solid;
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    animation-name: loading;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-duration: .2s;
+    animation-fill-mode: both;
+}
+@keyframes loading{
+    from{
+        transform: rotate(0deg)
+    }
+    to{
+        transform: rotate(360deg);
+    }
 }
