@@ -228,12 +228,64 @@ main .m-flex .nav .nav-flex .nav-ii .viv a{
     padding: 0;
 }
 main .m-cont .m-contt{
-    width: 1662px;
+    width: 1600px;
     height: 100px;
     position: relative;
     z-index: -1;
-    top: 40px;
-    left: 250px;
-    /* border: 1px solid; */
+    top: 50px;
+    left: 300px;
+    border: 1px solid;
 }
-/* END DESKTOP VIEW */
+main .m-cont .m-contt .m-conttt-flex{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+main .m-cont .m-contt .m-conttt-flex .box{
+    margin-right: 30px;
+}
+main .m-cont .m-contt .box{
+    width: 360px;
+}
+main .m-cont .m-contt .box .img{
+    position: relative;
+}
+main .m-cont .m-contt .box .img img{
+    width: 100%;
+    height: 220px;
+    border: 1px solid;
+    border-radius: 20px;
+}
+main .m-cont .m-contt .box .img .time{
+    width: 60px;
+    height: 20px;
+    bottom: 10px;
+    right: 20px;
+    border-radius: 100px;
+    position: absolute;
+    background-color: #000;
+}
+main .m-cont .m-contt .box .m-contt-flex{
+    display: flex;
+    margin-top: 5px;
+}
+main .m-cont .m-contt .box .m-contt-flex .i{
+    width: 40px;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 100px;
+    margin-right: 10px;
+}
+main .m-cont .m-contt .box .m-contt-flex .i img{
+    width: 100%;
+    height: 40px;
+}
+main .m-cont .m-contt .box .m-contt-flex .ii p{
+    margin-bottom: 10px;
+}
+main .m-cont .m-contt .box .m-contt-flex .ii p:nth-of-type(3){
+    color: #727272;
+}
+main .m-cont .m-contt .box .m-contt-flex .ii p:nth-of-type(1){
+    font-weight: 900;
+}
