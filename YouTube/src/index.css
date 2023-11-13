@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#c_drop{
+  width: 300px;
+  padding: 0;
+  margin: 0;
+  right: 10px;
+  padding-bottom: 10px;
+  display: none;
+}
+
+#c_drop #c_drop_i{
+  padding-bottom: 20px;
+  border-bottom: 1px solid;
+  padding: 10px;
+  display: flex;
+}
+#c_drop #c_drop_i div:nth-of-type(1){
+  width: 45px;
+  height: 45px;
+  font-size: 10px;
+  color: #fff;
+  border-radius: 100px;
+  background-color: #b4bfff;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+#c_drop #c_drop_i #ii a{
+  color: blue;
+}
+#c_drop .pi{
+  padding: 2px 15px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+}
+#c_drop .pi:hover{
+  background-color: rgb(238, 238, 238);
+}
+#c_drop .pi > i{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+}
+#menu{
+  font-size: 20px;
+}
+#sha{
+  box-shadow: -15px 0px 20px 20px #fff;
+  background-color: #fff;
+  color: #000;
+}

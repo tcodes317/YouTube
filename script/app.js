@@ -1,1 +1,0 @@
-// setTimeout(()=>{location.reload()}, 3000);let _nt=document.createElement("div");document.body.appendChild(_nt);_nt.innerText="No internet connection";_nt.style="text-align:center;color: #fff;background-color: ;";
