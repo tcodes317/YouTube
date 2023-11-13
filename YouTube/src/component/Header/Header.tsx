@@ -5,12 +5,15 @@ import Slider from "./../Slider/Slider";
 import Menu from "./../Menu/Menu";
 
 function Header(){
+    function di(e){
+        document.querySelector("#menbk").style="display: block !important";
+    }
     return(
         <>
             <div className="relative p-2 fixed">
                 <div className="flex items-center">
                     <div className="flex items-center">
-                        <div>
+                        <div onClick={di}>
                             <i className="fa fa-bars p-4 cursor-pointer hover:bg-slate-200 rounded-full" id="menu"></i>
                         </div>
                         <div className="flex items-center">
@@ -117,6 +120,9 @@ function Header(){
                 </div>
                 <div>
                     <Slider />
+                </div>
+                <div className="fixed top-0 left-0 bg-black w-full" id="menbk">
+                    <Menu />
                 </div>
             </div>
         </>

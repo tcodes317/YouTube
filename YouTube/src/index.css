@@ -65,3 +65,11 @@
   background-color: #fff;
   color: #000;
 }
+#menbk{
+  background-color: #00000091;
+}
+#shortImg{
+  width: 25px;
+  height: 25px;
+  margin-right: 8px;
+}
