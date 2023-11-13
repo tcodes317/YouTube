@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import logo from "./../../assets/360_F_300389025_b5hgHpjDprTySl8loTqJRMipySb1rO0I (1).jpg";
 import Slider from "./../Slider/Slider";
+import Menu from "./../Menu/Menu";
 
 function Header(){
     return(
