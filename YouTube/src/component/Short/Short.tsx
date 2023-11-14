@@ -14,9 +14,10 @@ function Short(){
                         <i className="fa fa-times text-3xl"></i>
                     </button>
                 </div>
-                <div className="space-x-4 grid grid-cols-2 justify-self-center">
+                <div className="space-x-4 grid grid-cols-2 justify-self-center ssm:grid-cols-3">
                     <Shorts />
                     <Shorts />
+                    <Shorts className="ssm:hidden" />
                 </div>
                 <div className="mx-auto w-full mt-12 bg-black flex justify-center ">
                     <button className="hover:bg-slate-200 transition absolute p-3 bg-slate-100 text-black text-center bottom-3 rounded-full w-80 mx-auto">

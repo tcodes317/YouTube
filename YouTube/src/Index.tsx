@@ -9,7 +9,7 @@ function Index(){
     }
     return(
         <>
-            <div className="relative md:bg-black ssm:bg-black">
+            <div className="relative md:bg-black">
                 <Header />
                 <Main />
                 <div className="fixed top-0 left-0 bg-black w-full" id="menbk" onClick={clas}>

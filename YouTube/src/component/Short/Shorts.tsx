@@ -1,4 +1,8 @@
-function Shorts(){
+type props={
+    className: string
+}
+
+function Shorts({props: className}){
     return(
         <>
             <div className="relative">

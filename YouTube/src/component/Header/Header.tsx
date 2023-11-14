@@ -14,7 +14,7 @@ function Header(){
                 <div className="flex items-center">
                     <div className="flex items-center">
                         <div onClick={di}>
-                            <i className="fa fa-bars p-4 cursor-pointer hover:bg-slate-200 rounded-full" id="menu"></i>
+                            <i className="fa fa-bars p-4 cursor-pointer transition hover:bg-slate-200 rounded-full" id="menu"></i>
                         </div>
                         <div className="flex items-center">
                             <img src={logo} alt="" className="w-5/12"/>

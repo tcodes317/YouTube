@@ -4,12 +4,17 @@ export default {
   theme: {
     screens:{
       sm: "480px",
-      ssm: "490px",
+      ssm: "699px",
       md: "768px",
+      mmd: "",
       lg: "976px",
-      xl: "1440px"
+      llg: "",
+      xl: "1440px",
+      xxl: ""
     },
-    extend: {},
+    extend: {
+      backgroundColor: rgba()
+    },
   },
   plugins: [],
 }

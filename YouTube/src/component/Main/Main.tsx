@@ -6,28 +6,48 @@ function Main(){
     return(
         <>
             <div className="relative">
-                <div className=""> {/** return back  */}
+                <div className="ssm:grid ssm:grid-cols-2"> {/** return back  */}
                     <div>
                         <Card />
                     </div>
-                    <div className="block">
+                    <div className="block ssm:bottom-7 ssm:relative ">
+                        <CardMain />
+                    </div>
+                    <div className="block ssm:bottom-0 ssm:relative hidden ssm:block">
+                        <CardMain />
+                    </div>
+                    <div className="block ssm:bottom-0 ssm:relative hidden ssm:block">
                         <CardMain />
                     </div>
                 </div>
                 <div className="relative mt-10 mx-4">
                     <Short />
                 </div>
-                <div className="block">
-                    <CardMain />
-                </div>
-                <div className="block">
-                    <CardMain />
-                </div>
-                <div className="block">
-                    <CardMain />
-                </div>
-                <div className="block">
-                    <CardMain />
+                <div className="ssm:grid ssm:grid-cols-2"> {/** return back  */}
+                    <div className="block ssm:bottom-7 ssm:relative">
+                        <CardMain />
+                    </div>
+                    <div className="block ssm:bottom-7 ssm:relative ">
+                        <CardMain />
+                    </div>
+                    <div className="block ssm:bottom-0 ssm:relative hidden ssm:block">
+                        <CardMain />
+                    </div>
+                    <div className="block ssm:bottom-0 ssm:relative hidden ssm:block">
+                        <CardMain />
+                    </div>
+                    <div className="block ssm:bottom-0 ssm:relative hidden ssm:block">
+                        <CardMain />
+                    </div>
+                    <div className="block ssm:bottom-0 ssm:relative hidden ssm:block">
+                        <CardMain />
+                    </div>
+                    <div className="block ssm:bottom-0 ssm:relative hidden ssm:block">
+                        <CardMain />
+                    </div>
+                    <div className="block ssm:bottom-0 ssm:relative hidden ssm:block">
+                        <CardMain />
+                    </div>
                 </div>
             </div>
         </>
